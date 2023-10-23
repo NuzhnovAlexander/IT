@@ -1,0 +1,233 @@
+// HTML
+
+<DOCTYPE HTML>
+
+<html>
+<header>
+     <link rel="stylesheet" href="st.css">
+</header>
+<body>
+
+	<!-- main -->
+
+	<div class="main">
+		<h1>Интернет-технологии</h1>
+		<div class="main__rectangle">
+	    		<div class="main__circle"></div>
+		</div>
+		<div class="main__rectangle small">
+	    	<div class="main__circle"></div>
+		</div>
+		<div class="main__rectangle medium">
+	    	<div class="main__circle"></div>
+		</div>
+		<div class="main__rectangle large">
+	    	<div class="main__circle"></div>
+		</div>
+	</div>
+
+	<!-- Lection -->
+
+	<div class="lection">
+		<div class="container">
+			<h2 class="title">Лекции</h2>
+		</div>
+	</div>
+
+	<!-- Reference -->
+
+	<div class="reference">
+		<div class="container">
+			<h2 class="title">Справка</h2>
+		</div>
+	</div>
+
+	<!-- LABS -->
+
+	<div class="labs">
+		<div class="container">
+
+			<h2 class="title">Задания</h2>
+			<!-- <hr> -->
+			<div class="labs__col">
+				<button class="labs__lab">Лабораторная работа №1</button>
+				<button class="labs__lab">Лабораторная работа №2</button>
+				<button class="labs__lab">Лабораторная работа №3</button>
+			</div>
+			<div class="labs__col">
+				<button class="labs__lab">Лабораторная работа №4</button>
+				<button class="labs__lab">Лабораторная работа №5</button>
+				<button class="labs__lab">Лабораторная работа №6</button>
+			</div>
+		</div>
+	</div>
+</body>
+<html>
+
+//CSS
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+@keyframes rotate{
+0%{
+    transform: rotate(0);
+}
+100%{
+    transform: rotate(360deg);
+}
+}
+@keyframes shadow{
+    0%{
+        box-shadow: 0px 0px 0px #8464D4;
+    }
+    50%{
+        box-shadow: 0px 0px 20px #8464D4;
+    }
+    100%{
+        box-shadow: 0px 0px 0px #8464D4;
+    }
+}
+
+body{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main{
+width:100%;
+height: 90vh;
+background-color: #b3ecff;
+overflow: hidden;
+border-radius: 0 0 10px 10px;
+}
+h1{
+        font-family: 'Young Serif', serif;
+        font-size: 48px;
+        position: absolute;
+        left: 800px;
+        top: 200px;
+        width: 500px;
+        z-index: 10000;
+}
+.main__rectangle{
+    width: 1000px;
+    height: 100px;
+    //background-color: #b3ecff;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    animation: rotate 10s infinite;
+    animation-timing-function: linear;
+    
+}
+
+.main__circle{
+    width: 100px;
+    height: 100%;
+    background-color:  #0086b3;
+    border-radius: 100%;
+}
+
+.small{
+    height: 150px;
+    top: 300px;
+    left: 150px;
+    animation: rotate 14s infinite;
+    animation-timing-function: linear;
+}
+.medium{
+    height: 225px;
+    top: 300px;
+    left: 300px;
+    animation: rotate 20s infinite;
+    animation-timing-function: linear;
+}
+.large{
+    height: 300px;
+    top: 100px;
+    left: -50px;
+    animation: rotate 30s infinite;
+    animation-timing-function: linear;
+}
+
+.small div{
+    width: 150px;
+    background-color:  #0099cc;
+}
+.medium > div{
+    width: 225px;
+    background-color:   #33ccff;
+}
+.large > div{
+    width: 300px;
+    background-color: #80dfff;
+}
+
+
+.labs{
+
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    text-align: center;
+    position: relative;
+}
+
+.title::before{
+    content: '';
+    /*margin: 0 auto;*/
+    position: absolute;
+    top: 80px;
+    left: 30%;
+    width: 500px;
+    border-top: 1px solid grey;
+    height: 2px;
+    background-color: grey;
+}
+
+hr{
+    width: 500px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: grey;
+}
+.labs__col{
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 0 100px 0; 
+
+}
+.labs__lab{
+    width: 300px;
+    height: 50px;
+    border: none;
+    /*border: 2px solid #236bb2;*/
+    border-radius: 10px;
+    /*background-color: #CFF7F7;*/
+    background-image: radial-gradient(circle, #CFF7F7 0%, #33ccff 100%);
+    font-size: 20px;
+    position: relative;
+}
+/*
+.labs__lab::before{
+    content: '';
+    border: 2px solid black;
+    width: 290px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+*/
+.labs__lab:hover {
+    animation: shadow 2s infinite ease-in;
+    /*animation-timing-function: linear;*/
+}
+
