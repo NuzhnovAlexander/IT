@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+}
+.main{
+padding-left: 200px;
+	
+width: 1000px;
+height: 657px;
+border: 10px solid green;
+margin: auto;
+
+/*overflow: hidden;*/
+}
+.main__box{
+width: 200px;
+height: 200px;
+border: 10px solid blue;
+}
+/*.second{margin-left: 400px;}*/
