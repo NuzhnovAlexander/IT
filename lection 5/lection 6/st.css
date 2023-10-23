@@ -1,0 +1,161 @@
+body{}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header{
+
+}
+.header__flex{
+    display: flex; 
+    justify-content: space-between;
+}
+.header__logo{
+    display: flex;
+}
+.header__logo img{
+    width: 40px;
+    height: 40px;
+}
+.header__logo h1{
+    font-size: 20px;
+    position: relative;
+    top: -5px;
+    margin-left: 9px;
+}
+
+.header__search{
+    position: relative;
+    left: -150px;
+}
+.header__search input{
+    border: none;
+    background-color: #e5e8e8;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+.header__search img{
+    position: relative;
+    top: 8px;
+    left: -240px;
+}
+
+.header__media{
+    position: relative;
+    left: -340px;
+}
+.header__notific{
+    border: none;
+    background-color: white;
+}
+.header__notific img{}
+.header__music{
+    border: none;
+    background-color: white;
+}
+.header__music img{}
+
+.header__panel{
+}
+.header__menu{
+    border: none;
+    background-color: white;
+}
+
+    /* CONTENT */
+
+.content{
+    background-color: #e5e8e8;
+}
+
+.content__menu{
+    display: flex;
+    flex-direction: column;
+}
+.content__menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 200px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+}
+
+.content__menu a img{
+    position: relative;
+    top: 5px;
+}
+
+.content__menu a:hover{
+    background-color: #e5e8e8;    
+}
+
+
+@keyframes anim{
+    0%{transform:scale(1);}
+    50%{transform:scale(2);}
+    100%{transform:scale(1);}
+}
+
+.test{    
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.test img{
+    width: 200px;
+    height: 200px;
+    /*transition: transform 5s linear;*/
+}
+.test img:hover{
+    /*transform:scale(2);*/
+    animation: anim 5s infinite linear;      /*ease-in ease-out ease-in-out*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
