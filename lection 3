@@ -1,0 +1,71 @@
+// HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="st_pos.css">
+</head>
+<body>
+	<div class="main">
+		<div class="main__box first"> 1
+		</div>
+		<div class="main__box second"> 2
+		</div>
+		<div class="main__box third"> 3
+		</div>
+	</div>
+</body>
+</html>
+
+//CSS
+
+body{
+	margin: 0;
+}
+.main{
+
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+/*	display: grid;
+	grid-template-areas: 
+	"A A C C"
+	"B B B B";*/
+	width: 1400px;
+	height: 657px;
+	border: 10px solid green;
+	margin: auto;
+
+
+/*overflow: hidden;*/
+}
+.main__box{
+/*	display: flex;
+	align-items: center;
+	justify-content: center;*/
+	/*position: relative;*/
+	/*top: 20px;*/
+	width: 200px;
+	height: 200px;
+	/*float: left;*/
+	font-size: 40px;
+	text-align: center;
+}
+.first{
+	width: 200px;
+	border: 10px solid red;
+	z-index: 3;
+/*	grid-area: A;
+	top: 100px;*/
+}
+.second{
+	width: 300px;
+	border: 10px solid blue;	
+	z-index: 2;
+	/*grid-area: B;*/
+}
+.third{
+	width: 400px;	
+	border: 10px solid yellow;
+	z-index: 1;
+	/*grid-area: C;*/
+}
